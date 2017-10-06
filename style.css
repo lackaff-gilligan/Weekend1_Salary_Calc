@@ -14,8 +14,12 @@ html, body {
 }
 
 .displayInfo {
-  height: 200px;
+  height: 300px;
   background-color: lightblue;
+}
+
+table {
+  width: 200px;
 }
 
 table, th, td {
