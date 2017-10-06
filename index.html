@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Weekend Challenge1</title>
-    <link rel="stylesheet" href="style.css">
-    <script src='jquery-3.2.1.min.js'></script>
-    <script src='client.js'></script>
-  </head>
-  <body>
-    <div class="container">
-     <h1>Salary Calculator</h1>
+<head>
+  <meta charset="utf-8">
+  <title>Weekend Challenge1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src='jquery-3.2.1.min.js'></script>
+  <script src='client.js'></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Salary Calculator</h1>
 
-     <div class="formContainer">
-       <form class="myForm">
+    <div class="formContainer">
         First Name:<br>
         <input type='text' class='inputF'id='fName'><br>
         Last Name:<br>
@@ -22,17 +21,31 @@
         Job Title:<br>
         <input type="text" class='inputF' id='jobTitle'><br>
         Annual Salary:<br>
-        <input type="text" class='inputF' id='salary'>
-       </form>
-       <button type="submit" id='submitBtn'>Submit</button>
-     </div>
-     <div class="displayInfo">
-       <h1>Employees</h1>
-
-       <h2>Monthly Costs:</h2>
-
-     </div>
-
+        <input type="text" class='inputF' id='salary'><br>
+      <button type="submit" id='submitBtn'>Submit</button>
     </div>
-  </body>
+    <div class="displayInfo">
+      <h1>Employees</h1>
+
+      <h2>Monthly Costs:</h2>
+      <table>
+        <tr>
+          <th>First</th>
+          <th>Last</th>
+          <th>ID Number</th>
+          <th>Job Title</th>
+          <th>Annual Salary</th>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Smith</td>
+          <td>45334</td>
+          <td>Teacher</td>
+          <td>50000</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</body>
 </html>

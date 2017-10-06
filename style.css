@@ -7,8 +7,6 @@ html, body {
   background-color: yellow;
 }
 
-
-
 .formContainer {
   margin-left: 40px;
   width: 210px;
@@ -18,4 +16,9 @@ html, body {
 .displayInfo {
   height: 200px;
   background-color: lightblue;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
 }
