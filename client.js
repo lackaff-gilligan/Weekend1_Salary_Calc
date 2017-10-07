@@ -1,18 +1,18 @@
 $(document).ready(onReady);
 
 function onReady() {
-$('#submitBtn').on('click', submitClicked);
+  $('#submitBtn').on('click', submitClicked);
 
 }
 
+//monthly costs tracker
 var total = 0;
 
 function submitClicked() {
-  console.log('in buttonClicked');
-  $('.displayInfo').append("<p>" + $('#fName').val() + "</p>");
-addTableRow();
-calculateTotal();
-resetFields();
+  console.log('in submitClicked');
+  addTableRow();
+  calculateTotal();
+  resetFields();
 }
 
 function addTableRow() {
@@ -22,9 +22,9 @@ function addTableRow() {
 }
 
 function calculateTotal() {
-  var monthCost = 
-  total += parseInt($('#salary').val());
-  $('#monthAvg').text(total);
+  var monthCost = parseInt($('#salary').val());
+  total += monthCost;
+  $('#monthAvg').text(' $' + total);
 }
 
 function resetFields() {

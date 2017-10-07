@@ -10,8 +10,13 @@ html, body {
 
 .formContainer {
   margin: 0 auto;
+  padding: 30px;
   width: 210px;
   background-color: lightgreen;
+}
+
+.inputs {
+  margin-bottom: 20px;
 }
 
 .displayInfo {
@@ -19,9 +24,22 @@ html, body {
   background-color: lightblue;
 }
 
+#costDisplay {
+  height: 60px;
+  width: 150px;
+  background-color: yellow;
+  margin: 0 auto;
+}
+
+
+
 table {
   width: 550px;
   margin: 0 auto;
+}
+
+th, td {
+  width: 20%;
 }
 
 table, th, td {

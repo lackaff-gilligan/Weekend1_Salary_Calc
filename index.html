@@ -10,22 +10,30 @@
 <body>
   <div class="container">
     <h1>Salary Calculator</h1>
-    
+
     <div class="formContainer">
-      First Name:<br>
+      <label for='fName'>First Name:</label><br>
       <input type='text' class='inputs' id='fName'><br>
-      Last Name:<br>
+
+      <label for='lName'>Last Name:</label><br>
       <input type='text' class='inputs' id='lName'><br>
-      ID Number:<br>
+
+      <label for='iDNum'>ID Number:</label><br>
       <input type="text" class='inputs' id='iDNum'><br>
-      Job Title:<br>
+
+      <label for='jobTitle'>Job Title:</label><br>
       <input type="text" class='inputs' id='jobTitle'><br>
-      Annual Salary:<br>
+
+      <label for='salary'>Annual Salary:</label><br>
       <input type="text" class='inputs' id='salary'><br>
-      <button type="submit" id='submitBtn'>Submit</button>
+
+      <button type="submit" id='submitBtn'>Calculate</button>
     </div>
     <div class="displayInfo">
-      <h1>Monthly Costs:<span id='monthAvg'></span></h1>
+      <h1>Monthly Costs:<!--<span id='monthAvg'></span>--></h1>
+      <div id='costDisplay'>
+       <p id='monthAvg'></p>
+      </div>
       <h2>Employees</h2>
       <table>
         <tr>
