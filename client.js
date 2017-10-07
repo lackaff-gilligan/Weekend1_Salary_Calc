@@ -22,6 +22,7 @@ function addTableRow() {
 }
 
 function calculateTotal() {
+  var monthCost = 
   total += parseInt($('#salary').val());
   $('#monthAvg').text(total);
 }

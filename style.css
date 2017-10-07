@@ -4,11 +4,12 @@ html, body {
 }
 
 .container {
+  text-align: center;
   background-color: yellow;
 }
 
 .formContainer {
-  margin-left: 40px;
+  margin: 0 auto;
   width: 210px;
   background-color: lightgreen;
 }
@@ -19,7 +20,8 @@ html, body {
 }
 
 table {
-  width: 200px;
+  width: 550px;
+  margin: 0 auto;
 }
 
 table, th, td {
