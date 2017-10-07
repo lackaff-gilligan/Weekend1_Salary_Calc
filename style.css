@@ -31,7 +31,10 @@ html, body {
   margin: 0 auto;
 }
 
-
+#monthAvg {
+  font-size: 25px;
+  padding-top: 14px;
+}
 
 table {
   width: 550px;

@@ -22,9 +22,11 @@ function addTableRow() {
 }
 
 function calculateTotal() {
-  var monthCost = parseInt($('#salary').val());
+  var empSalary = parseInt($('#salary').val());
+  var monthCost = Math.round(empSalary / 12);
   total += monthCost;
   $('#monthAvg').text(' $' + total);
+  //$('#costDisplay').append('<p id="monthAvg"> $' + total + '</p>');
 }
 
 function resetFields() {
