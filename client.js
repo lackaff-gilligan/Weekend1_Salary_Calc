@@ -18,7 +18,8 @@ function submitClicked() {
 function addTableRow() {
   $('table').append('<tr class="empRow"><td>' + $('#fName').val() + '</td><td>' +
   $('#lName').val() + '</td><td>'  + $('#iDNum').val() + '</td><td>' +
-  $('#jobTitle').val() + '</td><td>$ ' + $('#salary').val() + '</td></tr>');
+  $('#jobTitle').val() + '</td><td>$ ' + $('#salary').val() +
+  '<td><input type="checkbox" id="myBox">'+ '</td></tr>');
 }
 
 function calculateTotal() {
@@ -33,6 +34,9 @@ function resetFields() {
 }
 
 function removeEmployee() {
-$('.empRow:last').remove();
+  //if(input.checked) {
+    $('input:checkbox:checked').parent().parent().remove();
+  //}
+//$('.empRow:last').remove();
 
 }

@@ -97,8 +97,9 @@ label {
 }
 
 table {
-  width: 550px;
-  margin: 0 auto;
+  width: 600px;
+  /*margin: 0 auto;*/
+  margin-left: -15px;
 }
 
 th {
