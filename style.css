@@ -54,12 +54,17 @@ label {
   margin-bottom: 20px;
 }
 
-#submitBtn {
-  color: #FF404C;
+#submitBtn, #remove {
+  color: #012C40;
   font-size: 16px;
   height: 35px;
   width: 85px;
   text-align: center;
+  border: 2px solid #012C40;
+}
+
+#remove {
+  margin-top: 10px;
 }
 
 .displayInfo {
