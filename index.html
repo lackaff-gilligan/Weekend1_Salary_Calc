@@ -3,48 +3,55 @@
 <head>
   <meta charset="utf-8">
   <title>Weekend Challenge1</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src='jquery-3.2.1.min.js'></script>
   <script src='client.js'></script>
 </head>
 <body>
   <div class="container">
-    <h1>Salary Calculator</h1>
+    <h1 id='myTitle'>SALARY CALCULATOR</h1>
+<div class="left">
+  <div class="formContainer">
+    <label for='fName'>First Name:</label><br>
+    <input type='text' class='inputs' id='fName'><br>
 
-    <div class="formContainer">
-      <label for='fName'>First Name:</label><br>
-      <input type='text' class='inputs' id='fName'><br>
+    <label for='lName'>Last Name:</label><br>
+    <input type='text' class='inputs' id='lName'><br>
 
-      <label for='lName'>Last Name:</label><br>
-      <input type='text' class='inputs' id='lName'><br>
+    <label for='iDNum'>ID Number:</label><br>
+    <input type="text" class='inputs' id='iDNum'><br>
 
-      <label for='iDNum'>ID Number:</label><br>
-      <input type="text" class='inputs' id='iDNum'><br>
+    <label for='jobTitle'>Job Title:</label><br>
+    <input type="text" class='inputs' id='jobTitle'><br>
 
-      <label for='jobTitle'>Job Title:</label><br>
-      <input type="text" class='inputs' id='jobTitle'><br>
+    <label for='salary'>Annual Salary:</label><br>
+    <input type="text" class='inputs' id='salary'><br>
 
-      <label for='salary'>Annual Salary:</label><br>
-      <input type="text" class='inputs' id='salary'><br>
+    <button type="submit" id='submitBtn'>SUBMIT</button>
+  </div>
+</div>
 
-      <button type="submit" id='submitBtn'>Submit</button>
+<div class="right">
+  <div class="displayInfo">
+    <h1 id='monthlyCosts'>MONTHLY COSTS:</h1>
+    <div id='costDisplay'>
+     <p id='monthAvg'></p>
     </div>
-    <div class="displayInfo">
-      <h1>Monthly Costs:</h1>
-      <div id='costDisplay'>
-       <p id='monthAvg'></p>
-      </div>
-      <h2>Employees</h2>
-      <table>
-        <tr>
-          <th>First</th>
-          <th>Last</th>
-          <th>ID Number</th>
-          <th>Job Title</th>
-          <th>Annual Salary</th>
-        </tr>
-      </table>
-    </div>
+    <h2 id='employees'>EMPLOYEES:</h2>
+    <table>
+      <tr>
+        <th>First</th>
+        <th>Last</th>
+        <th>ID Number</th>
+        <th>Job Title</th>
+        <th>Annual Salary</th>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
   </div>
 </body>
 </html>
