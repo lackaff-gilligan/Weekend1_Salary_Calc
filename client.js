@@ -13,13 +13,28 @@ function submitClicked() {
   addTableRow();
   calculateTotal();
   resetFields();
+
 }
+
+// function addTableRow() {
+//   $('table').append('<tr class="empRow"><td>' + $('#fName').val() + '</td><td>' +
+//   $('#lName').val() + '</td><td>'  + $('#iDNum').val() + '</td><td>' +
+//   $('#jobTitle').val() + '</td><td>$ ' + $('#salary').val() +
+//   '<td><input type="checkbox" id="myBox">'+ '</td></tr>');
+// }
 
 function addTableRow() {
   $('table').append('<tr class="empRow"><td>' + $('#fName').val() + '</td><td>' +
   $('#lName').val() + '</td><td>'  + $('#iDNum').val() + '</td><td>' +
-  $('#jobTitle').val() + '</td><td>$ ' + $('#salary').val() +
+  $('#jobTitle').val() + '</td><td class="salaryData">$ ' + $('#salary').val() +
   '<td><input type="checkbox" id="myBox">'+ '</td></tr>');
+//call a separate function to store salary data
+attachData();
+}
+
+function attachData() {
+  var mySalData = $('.salaryData').data('salaryVal', {value: $('#salary').val()});
+  console.log(mySalData.value);
 }
 
 function calculateTotal() {
@@ -34,9 +49,7 @@ function resetFields() {
 }
 
 function removeEmployee() {
-  //if(input.checked) {
-    $('input:checkbox:checked').parent().parent().remove();
-  //}
+  $('input:checkbox:checked').parent().parent().remove();
 //$('.empRow:last').remove();
 
 }
