@@ -16,19 +16,12 @@ function submitClicked() {
 
 }
 
-function addTableRow() {
-  $('table').append('<tr class="empRow"><td>' + $('#fName').val() + '</td><td>' +
+function addTableRow() { //trying data-salary
+  $('table').append('<tr data-salary="' + $('#salary').val() + 'class="empRow"><td>' + $('#fName').val() + '</td><td>' +
   $('#lName').val() + '</td><td>'  + $('#iDNum').val() + '</td><td>' +
   $('#jobTitle').val() + '</td><td class="salaryData">$ ' + $('#salary').val() +
   '<td><input type="checkbox" id="myBox">'+ '</td></tr>');
-//call a separate function to store salary data
-//attachData();
 }
-
-// function attachData() {
-//   var mySalData = $('.salaryData').data('salaryVal', {value: $('#salary').val()});
-//   console.log(mySalData.value);
-// }
 
 function calculateTotal() {
   var empSalary = parseInt($('#salary').val());
@@ -42,7 +35,13 @@ function resetFields() {
 }
 
 function removeEmployee() {
+  //store sum of all checkboxes checked salary values
+  var subtractSal = parseInt($('input:checkbox:checked').parent().parent().data('salary'));
+  //divide the above by 12 for monthly salaries
+  var subMonthSal = Math.round(subtractSal / 12);
+  total -= subMonthSal;
+  $('#monthAvg').text(' $' + total);
   $('input:checkbox:checked').parent().parent().remove();
-//$('.empRow:last').remove();
+
 
 }
